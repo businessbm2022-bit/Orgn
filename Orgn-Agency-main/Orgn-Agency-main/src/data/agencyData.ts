@@ -1,0 +1,417 @@
+/**
+ * ORGN AGENCY — CENTRAL CONFIGURATION & DATA REPOSITORY
+ * 
+ * All content, brand text, client names, portfolio projects, and integrations
+ * can be modified directly within this file without altering any layout code.
+ */
+
+// -----------------------------------------------------------------------------
+// 1. AGENCY CONTACT & SOCIAL INTEGRATION CONFIGURATION
+// -----------------------------------------------------------------------------
+export const AGENCY_CONFIG = {
+  brandName: "ORGN Agency",
+  brandLogoText: "orgn",
+  taglineMain: "NOT MADE TO BLEND IN.",
+  taglineSupporting: "Original Ideas. Organic Growth.",
+  philosophy: "Original by Nature. Different by Design.",
+  introEyebrow: "INDEPENDENT CREATIVE & DIGITAL AGENCY",
+  introDescription:
+    "We turn bold ideas into distinctive brands, powerful campaigns, and digital experiences built to make an impact.",
+  aboutStory:
+    "ORGN is a creative advertising and digital marketing agency built around one belief: brands deserve more than ordinary ideas. We combine strategy, creativity, and digital execution to create meaningful brand experiences and campaigns designed to move businesses forward.",
+  aboutSecondary:
+    "From high-touch brand identities to full-funnel paid advertising, cinema-grade content production, and digital growth consulting, our integrated studio eliminates agency silos to deliver cohesive work that commands attention.",
+  
+  // EDITABLE MEDIA CONFIGURATION:
+  // Paste your YouTube link here (supports youtube.com/watch?v=..., youtu.be/..., or embed URLs).
+  // If left as "PASTE_YOUR_YOUTUBE_LINK_HERE", a curated cinematic placeholder with an interactive preview is shown.
+  COMPANY_VIDEO_URL: "PASTE_YOUR_YOUTUBE_LINK_HERE",
+
+  // EDITABLE CONTACT & SOCIAL CONFIGURATION:
+  // Replace these placeholders with your actual agency contact coordinates.
+  CONTACT_EMAIL: "hello@orgnagency.com",
+  WHATSAPP_NUMBER: "+1 (555) 234-5678",
+  INSTAGRAM_URL: "https://instagram.com/orgn.agency",
+  FACEBOOK_URL: "https://facebook.com/orgn.agency",
+  LINKEDIN_URL: "https://linkedin.com/company/orgn-agency",
+  BEHANCE_URL: "https://behance.net/orgnagency",
+
+  // Optional studio coordinates
+  studioLocation: "Global Creative Hub · Remote & On-Site Deployments",
+  workingHours: "Monday – Friday · 09:00 – 18:00 EST",
+};
+
+// -----------------------------------------------------------------------------
+// 2. CLIENT BRAND MARQUEE DATA
+// -----------------------------------------------------------------------------
+// Note: As specified in instructions, we do not invent fake client relationships.
+// Clearly marked placeholders make substituting actual client brand names seamless.
+export interface ClientBrand {
+  id: string;
+  name: string;
+  subtitle: string;
+  symbol: string;
+  logoImage?: string;
+}
+
+export const CLIENT_BRANDS: ClientBrand[] = [
+  {
+    id: "client-01",
+    name: "CLIENT BRAND 01",
+    subtitle: "Luxury Lifestyle",
+    symbol: "AURA DYNAMICS",
+  },
+  {
+    id: "client-02",
+    name: "CLIENT BRAND 02",
+    subtitle: "Decentralized Tech",
+    symbol: "NEBULA LABS",
+  },
+  {
+    id: "client-03",
+    name: "CLIENT BRAND 03",
+    subtitle: "Global Audio & Media",
+    symbol: "VORTEX MEDIA",
+  },
+  {
+    id: "client-04",
+    name: "CLIENT BRAND 04",
+    subtitle: "Clean Energy Ventures",
+    symbol: "SOLIS ENERGY",
+  },
+  {
+    id: "client-05",
+    name: "CLIENT BRAND 05",
+    subtitle: "Advanced Mobility",
+    symbol: "KINETIC BIO",
+  },
+  {
+    id: "client-06",
+    name: "CLIENT BRAND 06",
+    subtitle: "Architectural Spaces",
+    symbol: "CYPHER CAPITAL",
+  },
+  {
+    id: "client-07",
+    name: "CLIENT BRAND 07",
+    subtitle: "Consumer Goods",
+    symbol: "ATLAS STUDIOS",
+  },
+  {
+    id: "client-08",
+    name: "CLIENT BRAND 08",
+    subtitle: "SaaS Ecosystem",
+    symbol: "SYNTHESIS TECH",
+  },
+];
+
+// -----------------------------------------------------------------------------
+// 3. CORE SERVICES
+// -----------------------------------------------------------------------------
+export interface ServiceItem {
+  id: string;
+  number: string;
+  title: string;
+  shortDescription: string;
+  fullDescription: string;
+  deliverables: string[];
+  iconName: string;
+  image?: string;
+}
+
+export const SERVICES: ServiceItem[] = [
+  {
+    id: "branding",
+    number: "01",
+    title: "BRANDING & VISUAL IDENTITY",
+    shortDescription: "Brand strategy, brand identity, logo design, art direction, and comprehensive brand guidelines.",
+    fullDescription:
+      "We forge identities that cannot be ignored. We uncover your brand's core truth and translate it into distinctive typography, bespoke color systems, iconography, and master design guidelines that guarantee brand coherence across every consumer touchpoint.",
+    deliverables: ["Brand Strategy & Positioning", "Logo Design & Wordmarks", "Visual Identity Systems", "Art Direction & Tone", "Comprehensive Brand Guidelines"],
+    iconName: "Palette",
+  },
+  {
+    id: "digital-marketing",
+    number: "02",
+    title: "DIGITAL MARKETING & PAID ADS",
+    shortDescription: "Campaign strategy, Meta Ads, audience targeting, lead generation, campaign optimization, and performance reporting.",
+    fullDescription:
+      "Performance marketing anchored in creative excellence. We engineer scalable acquisition engines across Meta, Google, and TikTok that convert cold audiences into loyal advocates through hyper-targeted creatives and rigorous data testing.",
+    deliverables: ["Full-Funnel Campaign Strategy", "Meta Ads & Paid Social", "Search & Display Advertising", "High-Converting Funnels", "Transparent Real-Time Analytics"],
+    iconName: "TrendingUp",
+  },
+  {
+    id: "social-media",
+    number: "03",
+    title: "SOCIAL MEDIA MANAGEMENT",
+    shortDescription: "Content planning, publishing, community management, account management, and social media strategy.",
+    fullDescription:
+      "Organic growth that cultivates culture. We manage your social presence end-to-end with editorial publishing calendars, audience nurturing, viral-native short-form clips, and active community dialogue that transforms followers into brand champions.",
+    deliverables: ["Channel Strategy & Aesthetics", "Content Calendar & Publishing", "Community & DM Management", "Influencer Collaborations", "Monthly Growth Audits"],
+    iconName: "Share2",
+  },
+  {
+    id: "content-production",
+    number: "04",
+    title: "CREATIVE CONTENT PRODUCTION",
+    shortDescription: "Creative concepts, advertising campaigns, photography, commercial video production, and visual storytelling.",
+    fullDescription:
+      "Studio and location production crafted with cinema-grade craft. From high-fashion editorial campaigns and architectural photography to 4K commercial films, we script, shoot, and direct assets that elevate perceived brand value.",
+    deliverables: ["Creative Direction & Treatment", "Commercial Film Production", "Studio Product Photography", "Editorial Lookbooks", "Location Shoots & Scouting"],
+    iconName: "Camera",
+  },
+  {
+    id: "motion-graphics",
+    number: "05",
+    title: "VIDEO EDITING & MOTION GRAPHICS",
+    shortDescription: "Professional editing, motion design, animated graphics, and promotional videos.",
+    fullDescription:
+      "Dynamic visual rhythm that grips viewer attention. We combine precise color grading, sound design, kinetic typography, and 2D/3D motion graphics to turn static ideas into fluid, high-tempo stories optimized for social and broadcast.",
+    deliverables: ["Post-Production & Assembly", "Kinetic Typography & Titles", "2D/3D Motion Design", "Sound Design & Audio Mastering", "Platform-Specific Re-Cuts"],
+    iconName: "Film",
+  },
+  {
+    id: "creative-design",
+    number: "06",
+    title: "CREATIVE DESIGN",
+    shortDescription: "Social media creatives, advertising designs, campaign visuals, and digital marketing assets.",
+    fullDescription:
+      "Bold visual collateral designed for instant digital impact. We craft high-converting ad variants, billboard artwork, presentation decks, packaging concepts, and interactive web elements that maintain absolute visual supremacy.",
+    deliverables: ["High-CTR Ad Creatives", "Social Carousel Design", "Outdoor & OOH Billboards", "Packaging & Merchandising", "Keynote & Investor Decks"],
+    iconName: "Layers",
+  },
+  {
+    id: "strategy-consulting",
+    number: "07",
+    title: "STRATEGY & CONSULTING",
+    shortDescription: "Brand positioning, creative strategy, campaign planning, and digital growth consulting.",
+    fullDescription:
+      "Clarity before creation. We conduct deep market gap analyses, consumer behavioral audits, and unit-economic growth models to chart an authentic, defensible trajectory that guarantees sustainable commercial success.",
+    deliverables: ["Market & Competitor Audits", "Brand Architecture & Naming", "Creative Playbooks", "Go-To-Market Execution", "Executive Advisory Sessions"],
+    iconName: "Compass",
+  },
+];
+
+// -----------------------------------------------------------------------------
+// 4. SELECTED WORK & CASE STUDIES
+// -----------------------------------------------------------------------------
+export type PortfolioCategory =
+  | "All Projects"
+  | "Branding"
+  | "Social Media"
+  | "Paid Advertising"
+  | "Video & Motion"
+  | "Photography";
+
+export interface PortfolioProject {
+  id: string;
+  title: string;
+  client: string;
+  category: PortfolioCategory;
+  categoryLabel: string;
+  coverImage: string;
+  shortDescription: string;
+  summary: string;
+  challenge: string;
+  solution: string;
+  deliverables: string[];
+  year: string;
+  featured?: boolean;
+  aspectClass?: string;
+  galleryImages?: string[];
+}
+
+export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
+  {
+    id: "aura-arc-identity",
+    title: "Aura Arc Brand System",
+    client: "Sample Client — Luxury Goods",
+    category: "Branding",
+    categoryLabel: "Brand Identity & Art Direction",
+    coverImage: "/src/assets/images/portfolio_branding_identity_1792859880781.jpg",
+    shortDescription: "Minimalist brand identity with tactile charcoal substrates and electric cobalt hot-foil typography.",
+    summary:
+      "A complete reimagining of modern luxury identity for high-end bespoke horology and lifestyle goods. We developed an austere, tactile stationery suite, bespoke logotype, and digital guidelines that redefine understated elegance.",
+    challenge:
+      "The client struggled to differentiate from legacy European luxury houses without appearing ungrounded or sterile.",
+    solution:
+      "We engineered a monolithic identity built around dark slate textures, architectural proportions, and an electric cobalt accent that pulses with contemporary energy.",
+    deliverables: ["Bespoke Logotype", "Foil-Stamped Stationery", "Tone of Voice Matrix", "Packaging System"],
+    year: "2025",
+    featured: true,
+  },
+  {
+    id: "speed-reimagined-campaign",
+    title: "Speed Reimagined Digital Campaign",
+    client: "Sample Client — Performance Athletics",
+    category: "Paid Advertising",
+    categoryLabel: "Full-Funnel Campaign & Motion",
+    coverImage: "/src/assets/images/portfolio_motion_campaign_1792859881488.jpg",
+    shortDescription: "High-octane digital marketing and kinetic video campaign engineered for multi-channel acquisition.",
+    summary:
+      "A hyper-dynamic launch campaign for high-performance athletic footwear. Built around the theme of kinetic velocity, we combined synchronized 3D wave mechanics, athlete captures, and high-frequency ad variations across Meta and TikTok.",
+    challenge:
+      "Breaking through saturated athletic apparel ads with an electric, instantly recognizable motion identity that stops the scroll.",
+    solution:
+      "We directed an adrenaline-fueled motion aesthetic with electric sapphire light trails and modular video hooks tested dynamically in real-time.",
+    deliverables: ["Paid Social Creative Suite", "3D Kinetic Motion Design", "Performance Meta Ads", "Conversion Landing Funnel"],
+    year: "2025",
+    featured: true,
+  },
+  {
+    id: "nocturne-fragrance-story",
+    title: "Nocturne Sculptural Product Series",
+    client: "Sample Client — Artisan Parfumerie",
+    category: "Photography",
+    categoryLabel: "Commercial Photography & Art Direction",
+    coverImage: "/src/assets/images/portfolio_editorial_product_1792859881505.jpg",
+    shortDescription: "Chiaroscuro studio product photography capturing obsidian glassware and sapphire luminescent fluids.",
+    summary:
+      "An evocative commercial photography series celebrating artisanal fragrance craft. Set against obsidian rock formations with precision studio rim lighting, the visuals highlight the tactile beauty of dark glass and azure light refraction.",
+    challenge:
+      "Capturing deep black-on-black matte materials without losing contour definition or liquid brilliance in digital e-commerce formats.",
+    solution:
+      "We built a custom multi-point lighting rig using focused blue gels to isolate the vessel silhouette while creating deep atmospheric mist reflections.",
+    deliverables: ["Editorial E-Commerce Imagery", "Lookbook Still Lifes", "Social Asset Library", "Retail Display Collateral"],
+    year: "2024",
+    featured: false,
+  },
+  {
+    id: "orgn-kinetic-monolith",
+    title: "Vortex Kinetic Architecture",
+    client: "Sample Client — Spatial Design Lab",
+    category: "Video & Motion",
+    categoryLabel: "3D Motion & Visual Storytelling",
+    coverImage: "/src/assets/images/hero_orgn_cinematic_1792859878617.jpg",
+    shortDescription: "Sculptural 3D motion exploration blending obsidian chrome geometry and ambient atmospheric lighting.",
+    summary:
+      "An experimental brand film and spatial experience exploring infinite continuity. Designed as a brand anthem, the film pairs custom sound design with fluid chrome choreography.",
+    challenge:
+      "Creating an immersive visual manifesto that communicated forward momentum without relying on conventional narrative tropes.",
+    solution:
+      "We synthesized procedural physics and parametric geometric loops, rendered at 8K with obsidian metallic shader reflections.",
+    deliverables: ["Brand Anthem Video", "3D Animation Choreography", "Spatial Video Loops", "Sound Design"],
+    year: "2025",
+    featured: true,
+  },
+  {
+    id: "aeterna-creative-direction",
+    title: "Aeterna Design Ecosystem",
+    client: "Sample Client — Architectural Studio",
+    category: "Social Media",
+    categoryLabel: "Social Content & Studio Editorial",
+    coverImage: "/src/assets/images/about_creative_direction_1792859879679.jpg",
+    shortDescription: "Editorial agency documentary content and behind-the-scenes narrative highlighting collaborative craft.",
+    summary:
+      "A long-term organic social storytelling initiative capturing the raw, meticulous process of architectural concepting and spatial prototyping.",
+    challenge:
+      "Humanizing high-concept technical architecture for a broader digital audience of design enthusiasts and venture patrons.",
+    solution:
+      "We produced episodic behind-the-scenes micro-documentaries that framed the creative review process like an art film.",
+    deliverables: ["Bi-Weekly Reel Production", "Process Photography", "Editorial Social Grid", "Community Engagement"],
+    year: "2024",
+    featured: false,
+  },
+];
+
+// -----------------------------------------------------------------------------
+// 5. BRAND PRINCIPLES & PROCESS TIMELINE
+// -----------------------------------------------------------------------------
+export interface BrandPrinciple {
+  number: string;
+  title: string;
+  description: string;
+}
+
+export const BRAND_PRINCIPLES: BrandPrinciple[] = [
+  {
+    number: "01",
+    title: "THINK ORIGINAL",
+    description: "We reject templates, lazy tropes, and cookie-cutter playbooks. Every idea begins with a clean slate and a fearless search for what makes your brand genuinely singular.",
+  },
+  {
+    number: "02",
+    title: "CREATE WITH PURPOSE",
+    description: "Aesthetics must carry intent. We craft visual languages and campaigns calibrated to solve real commercial problems, build equity, and command cultural resonance.",
+  },
+  {
+    number: "03",
+    title: "GROW ORGANICALLY",
+    description: "Authentic connections outperform superficial noise. We build durable brand ecosystems that attract loyal communities and compound in value over time.",
+  },
+];
+
+export interface ProcessStep {
+  step: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  details: string[];
+  image?: string;
+}
+
+export const PROCESS_STEPS: ProcessStep[] = [
+  {
+    step: "01",
+    title: "DISCOVER",
+    subtitle: "Understand the brand, audience, goals, and market.",
+    description: "We immerse ourselves in your competitive landscape, interview stakeholders, and diagnose audience behavior to extract your authentic advantage.",
+    details: ["Stakeholder Deep Dives", "Competitive Gap Analysis", "Audience Persona Mapping"],
+  },
+  {
+    step: "02",
+    title: "STRATEGIZE",
+    subtitle: "Develop a focused creative and marketing direction.",
+    description: "We formulate a unified creative blueprint and distribution strategy. No guessing—every tactic connects directly to tangible business objectives.",
+    details: ["Strategic Positioning Deck", "Creative Direction Moodboards", "Channel & Media Allocation"],
+  },
+  {
+    step: "03",
+    title: "CREATE",
+    subtitle: "Produce compelling visuals, content, campaigns, and experiences.",
+    description: "Our multidisciplinary studio brings the vision to life through high-craft design, cinema-grade video, copy, and performance-tuned web assets.",
+    details: ["Brand Identity Systems", "High-Fidelity Ad Production", "Interactive Digital Assets"],
+  },
+  {
+    step: "04",
+    title: "OPTIMIZE",
+    subtitle: "Measure results, learn, and improve performance.",
+    description: "Launch is only day one. We monitor conversion data, conduct creative multivariate testing, and continuously refine to maximize growth efficiency.",
+    details: ["Real-Time Performance Tracking", "Creative Fatigue Refresh", "Iterative Conversion Optimization"],
+  },
+];
+
+export interface WhyOrgnItem {
+  number: string;
+  title: string;
+  description: string;
+  highlight: string;
+  image?: string;
+}
+
+export const WHY_ORGN_POINTS: WhyOrgnItem[] = [
+  {
+    number: "01",
+    title: "Original Creative Thinking",
+    description: "We don't borrow from whatever is currently trending on social media. We engineer bespoke creative concepts that elevate your brand far above commodity competitors.",
+    highlight: "Uncopyable Brand Positioning",
+  },
+  {
+    number: "02",
+    title: "Strategy-Led Execution",
+    description: "Eye candy without commercial rigor is wasted capital. Every visual decision, line of copy, and campaign format is rooted in proven marketing psychology.",
+    highlight: "Commercial Rigor First",
+  },
+  {
+    number: "03",
+    title: "Consistent Brand Experiences",
+    description: "From a 15-second TikTok ad to a high-touch investor presentation and web experience, we ensure seamless aesthetic fidelity at every stage of the customer journey.",
+    highlight: "360° Visual Coherence",
+  },
+  {
+    number: "04",
+    title: "Results-Focused Digital Campaigns",
+    description: "We treat your marketing budget like our own. Our campaigns prioritize real business outcomes—qualified pipeline, revenue velocity, and sustainable customer loyalty.",
+    highlight: "Measurable Growth Impact",
+  },
+];
